@@ -1,0 +1,40 @@
+{
+    "PRESENTATION" : "PRESENTATION",
+    "HELLO": "Bonjour {{value}}",
+    "NAME": "MARC SECHET",
+    "NAME CAPTION" : "Développeur </span> Fullstack <span class=\"red-text\"> Web </span> / <span class=\"red-text\">Android</span> Freelance <span class=\"red-text\">",
+    "DESCRIPTION" : "Actuellement en mission à <span class=\"red-text\">Capgemini</span> en tant qu'<span class=\"red-text\">ingénieur logiciel</span>, j'interviens sur des missions variées s'étalant de la <span class=\"red-text\">création</span> et <span class=\"red-text\">maintenance</span> d'applications web / mobiles jusqu'à la création de <span class=\"red-text\">webservices</span> et la gestion de la <span class=\"red-text\">persistance de données</span>",
+    
+
+    "SKILLS" : "COMPETENCES",  
+     "ALL" : "Tout",
+    "SKILL1" : "Front-End",
+    "SKILL2" : "Back-End",
+    "SKILL3" : "Autres",
+
+    
+    "PROJECTS" : "PROJETS REALISES / CLIENTS",
+
+    
+    "CONTACT" : "CONTACT",
+    "CONTACT-DESCRIPTION-1" : "Un projet à réaliser ? Une offre d'emploi à me proposer ?",
+    "CONTACT-DESCRIPTION-2" : "N'hésitez pas à me contacter au travers de mes réseaux ou en remplissant le formulaire.",
+    "MALT-DESCRIPTION" : "Profil Malt",
+    "FORM-FIRST-NAME" : "Prénom",
+    "FORM-LAST-NAME" : "Nom",
+    "FORM-MAIL" : "Adresse mail",
+    "FORM-MESSAGE" : "Votre message",
+    "FORM-FIRST-NAME-ERROR" : "Prénom requis",
+    "FORM-LAST-NAME-ERROR" : "Nom requis",
+    "FORM-MAIL-ERROR" : "Une adresse mail valide est requise",
+    "FORM-MESSAGE-ERROR" : "Un message est requis",
+    "FORM-SUBMIT" : "ENVOYER",
+
+    "ADD-CHARACTER" : "Ajouter un personnage",
+    "START-MATCH" : "Lancer un match",
+    "CHARACTER-IMPORT" : "Glisser une image ou cliquer sur le bouton pour ajouter une image pour le personnage",
+    "DELETE-CHARACTER" : "Supprimer un personnage",
+    "DELETE-CHARACTER-CONTENT" : "Voulez-vous supprimer ce personnage ? Si oui vous perdrez toutes ces informations et les combos qui y sont liés.",
+    "DELETE-COMBO" : "Supprimer ce combo",
+    "DELETE-COMBO-CONTENT" : "Voulez-vous vraiment supprimer ce combo ?"
+}
