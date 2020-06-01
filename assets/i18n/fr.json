@@ -21,6 +21,8 @@
     "ADD-CHARACTER" : "Ajouter un personnage",
     "DIALOG-EDIT-CHARACTER-TITLE" : "Edition de personnage",
     "DIALOG-ADD-CHARACTER-TITLE" : "Ajout de personnage",
+    "DIALOG-ADD-CHARACTER-TIER" : "Tier",
+    "DIALOG-ADD-CHARACTER-TIER-NONE" : "Aucun",
     "DIALOG-ADD-CHARACTER-FLOATY" : "Flottant",
     "DIALOG-ADD-CHARACTER-WEIGHT" : "Poids",
     "DIALOG-INPUT-SPECIFIC-FILTER" : "Filtres supplémentaires (ex. Respiration abdominale)",

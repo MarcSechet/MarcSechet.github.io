@@ -21,6 +21,8 @@
     "ADD-CHARACTER" : "Add a character",
     "DIALOG-EDIT-CHARACTER-TITLE" : "Edit a character",
     "DIALOG-ADD-CHARACTER-TITLE" : "Add a character",
+    "DIALOG-ADD-CHARACTER-TIER" : "Tier",
+    "DIALOG-ADD-CHARACTER-TIER-NONE" : "None",
     "DIALOG-ADD-CHARACTER-FLOATY" : "Floaty",
     "DIALOG-ADD-CHARACTER-WEIGHT" : "Weight",
     "DIALOG-INPUT-SPECIFIC-FILTER" : "Specific filter (e.g. Deep Breathing)",
