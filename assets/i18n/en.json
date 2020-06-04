@@ -39,7 +39,8 @@
     "FILTER-END-MOVE" : "Combo ends with",
     "FILTER-CATEGORY-ANY-MOVE" : "Any move",
     "FILTER-ADDITIONAL-FILTERS" : "Additional filters",
-    "CLEAR-FILTERS":"Clear filters",
+    "FILTERS":"Filters",
+    "CLEAR-FILTERS":"Reset",
     
     "DIALOG-ADD-COMBO-TITLE" : "Add a combo",
     "DIALOG-EDIT-COMBO-TITLE" : "Edit combo",

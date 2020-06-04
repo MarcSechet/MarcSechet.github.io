@@ -38,7 +38,8 @@
     "FILTER-END-MOVE" : "Dernier coup",
     "FILTER-CATEGORY-ANY-MOVE" : "N'importe quel coup",
     "FILTER-ADDITIONAL-FILTERS" : "Filtres supplémentaires",
-    "CLEAR-FILTERS":"Réinitialiser filtres",
+    "FILTERS":"Filtres",
+    "CLEAR-FILTERS":"Réinitialiser",
     
     "DIALOG-ADD-COMBO-TITLE" : "Ajouter un combo",
     "DIALOG-EDIT-COMBO-TITLE" : "Editer un combo",
