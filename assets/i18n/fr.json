@@ -155,9 +155,22 @@
     "ADD-PRO" : "Ajouter un point fort",
     "ADD-CON" : "Ajouter un point faible",
 
+    "LOADING":"Chargement des données",
+
     "EMPTY-CONFIRM-TABLE" : "Le confirm est vide :/",
-    "EMPTY-CONFIRMS" : "Pas de confirm connu pour ce matchup",
-    "EMPTY-TIERLISTS" : "Pas de tierlist connu pour ce matchup",
     "EMPTY-ADVANTAGES" : "Pas d'avantage connu pour ce matchup",
-    "EMPTY-DISADVANTAGES" : "Pas de désavantages connu pour ce matchup"
+    "EMPTY-DISADVANTAGES" : "Pas de désavantage connu pour ce matchup",
+    "EMPTY-MATCHUP-CONFIRMS" : "Pas de confirm connu pour ce matchup",
+    "EMPTY-MATCHUP-TIERLISTS" : "Pas de tierlist connu pour ce matchup",
+    "EMPTY-PRO" : "Pas de point fort connu pour ce personnage",
+    "EMPTY-CON" : "Pas de point faible connu pour ce personnage",
+    "EMPTY-TAB-BEST-MOVE" : "Pas de meilleur coup connu pour ce personnage",
+    "EMPTY-TAB-COMBO" : "Pas de combo connu pour ce personnage",
+    "EMPTY-TAB-CONFIRM" : "Pas de confirm connu pour ce personnage",
+    "EMPTY-TAB-TIERLIST" : "Pas de tierlist connu pour ce personnage",
+    "EMPTY-CHARACTER-LIST" : "Il n'y a pas de personnage dans la base de données ",
+    "EMPTY-FILTERED-CHARACTER-LIST" : "Aucun personnage ne correspond avec le filtre",
+    "EMPTY-FILTERED-COMBO-LIST" : "Aucun combo ne correspond avec le filtre",
+    "EMPTY-FILTERED-CONFIRM-LIST" : "Aucun confirm ne correspond avec le filtre",
+    "EMPTY-FILTERED-TIERLIST-LIST" : "Aucune tierlist ne correspond avec le filtre"
 }

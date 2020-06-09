@@ -156,10 +156,22 @@
     "ADD-PRO" : "Add a strength",
     "ADD-CON" : "Add a weakness",
 
+    "LOADING":"Loading data",
+
     "EMPTY-CONFIRM-TABLE" : "The confirm is empty :/",
-    "EMPTY-CONFIRMS" : "No confirm known for this matchup",
-    "EMPTY-TIERLISTS" : "No tierlist known for this matchup",
     "EMPTY-ADVANTAGES" : "No advantage known for this matchup",
-    "EMPTY-DISADVANTAGES" : "No disadvantage known for this matchup"
-   
+    "EMPTY-DISADVANTAGES" : "No disadvantage known for this matchup",
+    "EMPTY-MATCHUP-CONFIRMS" : "No confirm known for this matchup",
+    "EMPTY-MATCHUP-TIERLISTS" : "No tierlist known for this matchup",
+    "EMPTY-PRO" : "No strength known for this character",
+    "EMPTY-CON" : "No weakness known for this character",
+    "EMPTY-TAB-BEST-MOVE" : "No best move known for this character",
+    "EMPTY-TAB-COMBO" : "No combo known for this character",
+    "EMPTY-TAB-CONFIRM" : "No confirm known for this character",
+    "EMPTY-TAB-TIERLIST" : "No tierlist known for this character",
+    "EMPTY-CHARACTER-LIST" : "There is no character in the database",
+    "EMPTY-FILTERED-CHARACTER-LIST" : "No character matching the filter",
+    "EMPTY-FILTERED-COMBO-LIST" : "No combo matching the filter",
+    "EMPTY-FILTERED-CONFIRM-LIST" : "No confirm matching the filter",
+    "EMPTY-FILTERED-TIERLIST-LIST" : "No tierlist matching the filter"
 }
