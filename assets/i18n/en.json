@@ -1,4 +1,7 @@
 {
+   "OK" : "OK",
+   "RETRY": "RETRY",
+   
     "CHARACTER-INFORMATION" : "Character information",
     "START-MATCH" : "Start a match",
     "LOGIN" : "Log in",

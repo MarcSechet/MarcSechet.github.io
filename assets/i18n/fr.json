@@ -1,4 +1,7 @@
 {
+    "OK" : "OK",
+    "RETRY": "RETRY",
+    
     "CHARACTER-INFORMATION" : "Fiches personnages",
     "START-MATCH" : "Lancer un match",
     "LOGIN" : "Connexion",
