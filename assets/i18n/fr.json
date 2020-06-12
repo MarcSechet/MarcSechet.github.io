@@ -175,5 +175,8 @@
     "EMPTY-FILTERED-CHARACTER-LIST" : "Aucun personnage ne correspond avec le filtre",
     "EMPTY-FILTERED-COMBO-LIST" : "Aucun combo ne correspond avec le filtre",
     "EMPTY-FILTERED-CONFIRM-LIST" : "Aucun confirm ne correspond avec le filtre",
-    "EMPTY-FILTERED-TIERLIST-LIST" : "Aucune tierlist ne correspond avec le filtre"
+    "EMPTY-FILTERED-TIERLIST-LIST" : "Aucune tierlist ne correspond avec le filtre",
+
+    "404-MESSAGE": "La ressource recherchée n'existe pas",
+    "GO-BACK":"Retourner à la page d'accueil"
 }

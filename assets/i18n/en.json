@@ -176,5 +176,8 @@
     "EMPTY-FILTERED-CHARACTER-LIST" : "No character matching the filter",
     "EMPTY-FILTERED-COMBO-LIST" : "No combo matching the filter",
     "EMPTY-FILTERED-CONFIRM-LIST" : "No confirm matching the filter",
-    "EMPTY-FILTERED-TIERLIST-LIST" : "No tierlist matching the filter"
+    "EMPTY-FILTERED-TIERLIST-LIST" : "No tierlist matching the filter",
+
+    "404-MESSAGE": "Unfortunately, the resource you're looking for does not exist",
+    "GO-BACK":"Go back to the home page"
 }
