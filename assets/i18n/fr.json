@@ -163,7 +163,7 @@
     "MATCHUP" : "Matchup",
     "CHANGE-MATCHUP-CHARACTERS": "Changer les personnages du matchup",
 
-    "EMPTY-CONFIRM-TABLE" : "Le confirm est vide :/",
+    "EMPTY-CONFIRM-TABLE" : "Pas d'information dans ce confirm",
     "EMPTY-ADVANTAGES" : "Pas d'avantage connu pour ce matchup",
     "EMPTY-DISADVANTAGES" : "Pas de désavantage connu pour ce matchup",
     "EMPTY-MATCHUP-CONFIRMS" : "Pas de confirm connu pour ce matchup",
@@ -181,5 +181,6 @@
     "EMPTY-FILTERED-TIERLIST-LIST" : "Aucune tierlist ne correspond avec le filtre",
 
     "404-MESSAGE": "La ressource recherchée n'existe pas",
-    "GO-BACK":"Retourner à la page d'accueil"
+    "GO-BACK":"Retourner à la page d'accueil",
+    "UNAUTHORIZED":"L'utilisateur n'est pas habilité, veuillez contacter l'administrateur du site pour avoir accès à toutes les fonctionnalités"
 }

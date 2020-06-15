@@ -164,7 +164,7 @@
     "MATCHUP" : "Matchup",
     "CHANGE-MATCHUP-CHARACTERS": "Change matchup characters",
 
-    "EMPTY-CONFIRM-TABLE" : "The confirm is empty :/",
+    "EMPTY-CONFIRM-TABLE" : "No data for this confirm",
     "EMPTY-ADVANTAGES" : "No advantage known for this matchup",
     "EMPTY-DISADVANTAGES" : "No disadvantage known for this matchup",
     "EMPTY-MATCHUP-CONFIRMS" : "No confirm known for this matchup",
@@ -182,5 +182,6 @@
     "EMPTY-FILTERED-TIERLIST-LIST" : "No tierlist matching the filter",
 
     "404-MESSAGE": "Unfortunately, the resource you're looking for does not exist",
-    "GO-BACK":"Go back to the home page"
+    "GO-BACK":"Go back to the home page",
+    "UNAUTHORIZED":"The user is unauthorized, please contact the admin to have access to all the functionalities of the website"
 }
