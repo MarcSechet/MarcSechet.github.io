@@ -160,6 +160,9 @@
 
     "LOADING":"Chargement des données",
 
+    "MATCHUP" : "Matchup",
+    "CHANGE-MATCHUP-CHARACTERS": "Changer les personnages du matchup",
+
     "EMPTY-CONFIRM-TABLE" : "Le confirm est vide :/",
     "EMPTY-ADVANTAGES" : "Pas d'avantage connu pour ce matchup",
     "EMPTY-DISADVANTAGES" : "Pas de désavantage connu pour ce matchup",

@@ -161,6 +161,9 @@
 
     "LOADING":"Loading data",
 
+    "MATCHUP" : "Matchup",
+    "CHANGE-MATCHUP-CHARACTERS": "Change matchup characters",
+
     "EMPTY-CONFIRM-TABLE" : "The confirm is empty :/",
     "EMPTY-ADVANTAGES" : "No advantage known for this matchup",
     "EMPTY-DISADVANTAGES" : "No disadvantage known for this matchup",
