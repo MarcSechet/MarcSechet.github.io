@@ -1,9 +1,9 @@
 {
    "OK" : "OK",
    "RETRY": "RETRY",
-   
-    "CHARACTER-INFORMATION" : "Character information",
-    "START-MATCH" : "Start a match",
+
+    "COLLECTION" : "Collection",
+    "DECKS" : "Decks",
     "LOGIN" : "Log in",
     "LOGOUT" : "Logout",
     "SIGN-UP" : "Sign up",
@@ -33,9 +33,9 @@
     "CHARACTER-ICON-IMPORT" : "Drag a picture or click on the import button to add an icon to the character",
     "DELETE-CHARACTER" : "Remove character",
     "DELETE-CHARACTER-CONTENT" : "Do you want to delete this character ? If you do so you will lose all the information about the character and it's combos.",
-    
+
     "ADD-COMBO" : "Add a combo",
-    
+
     "FILTER-ORDER-BY" : "Order by",
     "FILTER-MOVES-CONTAINED" : "Moves contained in the combo",
     "FILTER-START-MOVE" : "Combo starts with",
@@ -44,7 +44,7 @@
     "FILTER-ADDITIONAL-FILTERS" : "Additional filters",
     "FILTERS":"Filters",
     "CLEAR-FILTERS":"Reset",
-    
+
     "DIALOG-ADD-COMBO-TITLE" : "Add a combo",
     "DIALOG-EDIT-COMBO-TITLE" : "Edit combo",
     "DIALOG-COMBO-NAME" : "Combo name",
@@ -54,7 +54,7 @@
     "DIALOG-COMBO-ADD-INPUT" : "Add an input",
     "DIALOG-COMBO-INPUTS" : "Inputs of this combo",
     "DIALOG-COMBO-REMOVE-LAST-INPUT" : "Remove last",
-    
+
     "DELETE-COMBO" : "Remove combo",
     "DELETE-COMBO-CONTENT" : "Do you want to delete this combo ?",
 
@@ -68,7 +68,7 @@
     "DIALOG-CONFIRM-NAME" : "Confirm name",
     "DIALOG-CONFIRM-DESCRIPTION" : "Description (e.g. kill confirm)",
     "DIALOG-CONFIRM-COMMENT" : "Comment (e.g. done with DI)",
-    
+
     "DIALOG-Add-CONFIRM-DETAILS-TITLE" : "Add a target",
     "DIALOG-Update-CONFIRM-DETAILS-TITLE" : "Edit target",
     "DIALOG-Delete-CONFIRM-DETAILS-TITLE" : "Delete a target",
@@ -96,7 +96,7 @@
     "DIALOG-TIERLIST-EDIT-TIER-CANCEL" : "Cancel Edit",
     "DIALOG-TIERLIST-EDIT-TIER-CONFIRM" : "Confirm Edit",
     "DIALOG-TIERLIST-TIER-DUPLICATE" : "Duplicate tier name",
-    
+
     "CHARACTER-SKILL-0" : "Not rated",
     "CHARACTER-SKILL-1" : "Very Easy",
     "CHARACTER-SKILL-2" : "Easy",

@@ -1,9 +1,9 @@
 {
     "OK" : "OK",
     "RETRY": "RETRY",
-    
-    "CHARACTER-INFORMATION" : "Fiches personnages",
-    "START-MATCH" : "Lancer un match",
+
+    "COLLECTION" : "Collection",
+    "DECKS" : "Decks",
     "LOGIN" : "Connexion",
     "LOGOUT" : "Déconnexion",
     "SIGN-UP" : "Inscription",
@@ -33,7 +33,7 @@
     "CHARACTER-ICON-IMPORT" : "Glisser une image ou cliquer sur le bouton pour ajouter une icône pour le personnage",
     "DELETE-CHARACTER" : "Supprimer un personnage",
     "DELETE-CHARACTER-CONTENT" : "Voulez-vous supprimer ce personnage ? Si oui vous perdrez toutes ces informations et les combos qui y sont liés.",
-        
+
     "ADD-COMBO" : "Ajouter un combo",
     "FILTER-ORDER-BY" : "Trier par",
     "FILTER-MOVES-CONTAINED" : "Coups contenus dans ce combo",
@@ -43,7 +43,7 @@
     "FILTER-ADDITIONAL-FILTERS" : "Filtres supplémentaires",
     "FILTERS":"Filtres",
     "CLEAR-FILTERS":"Réinitialiser",
-    
+
     "DIALOG-ADD-COMBO-TITLE" : "Ajouter un combo",
     "DIALOG-EDIT-COMBO-TITLE" : "Editer un combo",
     "DIALOG-COMBO-NAME" : "Nom du combo",
@@ -53,7 +53,7 @@
     "DIALOG-COMBO-ADD-INPUT" : "Ajouter un coup",
     "DIALOG-COMBO-INPUTS" : "Coups de ce combo",
     "DIALOG-COMBO-REMOVE-LAST-INPUT" : "Supprimer le dernier",
-    
+
     "DELETE-COMBO" : "Supprimer ce combo",
     "DELETE-COMBO-CONTENT" : "Voulez-vous vraiment supprimer ce combo ?",
 
@@ -67,7 +67,7 @@
     "DIALOG-CONFIRM-NAME" : "Nom du confirm",
     "DIALOG-CONFIRM-DESCRIPTION" : "Description (ex. kill confirm)",
     "DIALOG-CONFIRM-COMMENT" : "Commentaire (ex. Fait avec du DI)",
-    
+
     "DIALOG-Add-CONFIRM-DETAILS-TITLE" : "Ajouter une cible",
     "DIALOG-Update-CONFIRM-DETAILS-TITLE" : "Editer une cible",
     "DIALOG-Delete-CONFIRM-DETAILS-TITLE" : "Supprimer cette cible",
@@ -95,14 +95,14 @@
     "DIALOG-TIERLIST-EDIT-TIER-CANCEL" : "Annuler édition",
     "DIALOG-TIERLIST-EDIT-TIER-CONFIRM" : "Confirmer édition",
     "DIALOG-TIERLIST-TIER-DUPLICATE" : "Ce nom de tier existe déjà",
-    
+
     "CHARACTER-SKILL-0" : "Non noté",
     "CHARACTER-SKILL-1" : "Très facile",
     "CHARACTER-SKILL-2" : "Facile",
     "CHARACTER-SKILL-3" : "Moyen",
     "CHARACTER-SKILL-4" : "Difficile",
     "CHARACTER-SKILL-5" : "Très difficile",
-    
+
     "CHARACTER-TAB-BEST-MOVES" : "Meilleurs coups",
     "CHARACTER-TAB-COMBOS" : "Combos",
     "CHARACTER-TAB-CONFIRMS" : "Confirms",
