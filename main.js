@@ -2404,6 +2404,7 @@ class SendCardToOtherCollectionModalComponent {
 
   ngOnInit() {
     // TODO : gect collections & decks even lighter (only id & name)
+    // TODO : add quantity (ex: send 1 card out of 3)
     this.yugiohService.getCollections().subscribe(collections => this.options = collections);
     this.myControl = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__.FormControl(localStorage.getItem('send-card-to-other-collection-id-and-name') ?? '');
     this.filteredOptions = this.myControl.valueChanges.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_3__.map)(value => {
@@ -4586,7 +4587,7 @@ class CollectionNewComponent {
                 this.collection = aggregatedCollection;
                 this.collection.id = null; // TODO TODO -> IMPORTANT : KEEP NULL AT ALL COSTS OR ELSE IT WILL MESS UP WITH EXISTING COLLECTIONS !
                 this.isFullCollection = true;
-                this.generateTotalPrice();
+                this.generateTotalPrice(); // TODO : YUGI-1 AMELIORER ROBUSTESSE
                 this.refreshCollectionView();
             });
         }
@@ -4640,8 +4641,14 @@ class CollectionNewComponent {
                     const map = new Map();
                     for (const data of value.data) {
                         map.set(String(data.id), data.card_prices[0].cardmarket_price);
-                        this.cardPriceMap.set(this.collection.items.map(item => item.card)
-                            .find(c => c.apiId === String(data.id)), data.card_prices[0].cardmarket_price);
+                        const foundCard = this.collection.items.map(item => item.card)
+                            .find(c => c.apiId === String(data.id));
+                        if (!foundCard) {
+                            console.log(data); // TODO : mieux afficher cette erreur (en faire une liste ou que sais-je
+                        }
+                        else {
+                            this.cardPriceMap.set(foundCard, data.card_prices[0].cardmarket_price);
+                        }
                     }
                     // sort
                     this.cardPriceEntries = Array.from(new Map([...this.cardPriceMap.entries()].sort((a, b) => b[1] - a[1])).entries());
@@ -5058,7 +5065,7 @@ class CollectionNewComponent {
             const importData = result;
             console.log('The dialog was closed');
             if (importData.selectedIndex === 0) {
-                const cardLines = result.split(/[\r\n]+/);
+                const cardLines = result.importText.split(/[\r\n]+/);
                 console.log(cardLines);
                 const lines = new Array();
                 for (const line of cardLines) {
@@ -5083,7 +5090,9 @@ class CollectionNewComponent {
                 this.yugiohService.importCollection(this.collection.id, lines).subscribe(value => {
                     this.collection = value.collection;
                     this.localUpdateCollection(false);
-                    this.openSnackBar(value.notAddedPojos.toString(), 'OK');
+                    if (value.notAddedPojos?.length > 0) {
+                        this.openSnackBar('Cartes non ajoutées : ' + value.notAddedPojos.toString(), 'OK');
+                    }
                 });
             }
             else {
@@ -5576,7 +5585,7 @@ Ne pas mettre de set, il faut forcément mettre un nombre avant le nom de la car
             collectionItem.quantity = line.cardNumber;
             collectionItems.push(collectionItem);
         });
-        this.generateTotalPrice(collectionItems);
+        this.generateTotalPrice(collectionItems); // TODO : YUGI-1 AMELIORER ROBUSTESSE
         this.findCardsInCollectionAndAssociatePrices(collectionItems);
     }
     generateTotalPrice(collectionItems) {
@@ -6757,9 +6766,14 @@ class DeckComponent {
                 if (value?.data && value.data.length > 0) {
                     const map = new Map();
                     for (const data of value.data) {
-                        map.set(String(data.id), data.card_prices[0].cardmarket_price);
-                        this.cardPriceMap.set(this.collection.items.map(item => item.card)
-                            .find(c => c.apiId === String(data.id)), data.card_prices[0].cardmarket_price);
+                        const foundCard = this.collection.items.map(item => item.card)
+                            .find(c => c.apiId === String(data.id));
+                        if (!foundCard) {
+                            console.log(data); // TODO : mieux afficher cette erreur (en faire une liste ou que sais-je
+                        }
+                        else {
+                            this.cardPriceMap.set(foundCard, data.card_prices[0].cardmarket_price);
+                        }
                     }
                     // sort
                     this.cardPriceEntries = Array.from(new Map([...this.cardPriceMap.entries()].sort((a, b) => b[1] - a[1])).entries());
@@ -7378,7 +7392,7 @@ class DeckComponent {
             const importData = result;
             console.log('The dialog was closed');
             if (importData.selectedIndex === 0) {
-                const cardLines = result.split(/[\r\n]+/);
+                const cardLines = result.importText.split(/[\r\n]+/);
                 console.log(cardLines);
                 const lines = new Array();
                 const indexMainLine = cardLines.findIndex(element => element.includes('main'));
@@ -7412,7 +7426,9 @@ class DeckComponent {
                 this.yugiohService.importCollection(this.collection.id, lines).subscribe(value => {
                     this.collection = value.collection;
                     this.localUpdateCollection(false);
-                    this.openSnackBar(value.notAddedPojos.toString(), 'OK');
+                    if (value.notAddedPojos?.length > 0) {
+                        this.openSnackBar('Cartes non ajoutées : ' + value.notAddedPojos.toString(), 'OK');
+                    }
                 });
             }
             else {
