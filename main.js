@@ -5117,7 +5117,7 @@ class CollectionNewComponent {
                     const aName = a.language === 'en' ? (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(a.cardId).name : (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(a.cardId).nameFr;
                     const bName = b.language === 'en' ? (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(b.cardId).name : (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(b.cardId).nameFr;
                     return (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(a.cardId).type.localeCompare((0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(b.cardId).type)
-                        || aName.localeCompare(bName);
+                        || aName?.localeCompare(bName);
                 });
                 break;
             case _sort_dialog_card_sort__WEBPACK_IMPORTED_MODULE_3__.CardSort.alphabeticalDesc:
@@ -5125,7 +5125,7 @@ class CollectionNewComponent {
                     const aName = a.language === 'en' ? (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(a.cardId).name : (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(a.cardId).nameFr;
                     const bName = b.language === 'en' ? (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(b.cardId).name : (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(b.cardId).nameFr;
                     return (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(a.cardId).type.localeCompare((0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(b.cardId).type)
-                        || bName.localeCompare(aName);
+                        || bName?.localeCompare(aName);
                 });
                 break;
             case _sort_dialog_card_sort__WEBPACK_IMPORTED_MODULE_3__.CardSort.nbOwnedAsc:
@@ -6546,7 +6546,7 @@ class DeckComponent {
                     const aName = a.language === 'en' ? (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(a.cardId).name : (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(a.cardId).nameFr;
                     const bName = b.language === 'en' ? (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(b.cardId).name : (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(b.cardId).nameFr;
                     return (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(a.cardId).type.localeCompare((0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(b.cardId).type)
-                        || aName.localeCompare(bName);
+                        || aName?.localeCompare(bName);
                 });
                 break;
             case _sort_dialog_card_sort__WEBPACK_IMPORTED_MODULE_4__.CardSort.alphabeticalDesc:
@@ -6554,7 +6554,7 @@ class DeckComponent {
                     const aName = a.language === 'en' ? (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(a.cardId).name : (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(a.cardId).nameFr;
                     const bName = b.language === 'en' ? (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(b.cardId).name : (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(b.cardId).nameFr;
                     return (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(a.cardId).type.localeCompare((0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(b.cardId).type)
-                        || bName.localeCompare(aName);
+                        || bName?.localeCompare(aName);
                 });
                 break;
             case _sort_dialog_card_sort__WEBPACK_IMPORTED_MODULE_4__.CardSort.nbOwnedAsc:
