@@ -4242,7 +4242,7 @@ function CollectionListComponent_div_12_div_1_Template(rf, ctx) { if (rf & 1) {
 } if (rf & 2) {
     const collection_r8 = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵnextContext"]().$implicit;
     const ctx_r9 = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵpureFunction1"](1, _c0, "linear-gradient(to left, rgba(255,255,255,0) 20%,rgba(255,255,255,1)), url(" + ctx_r9.backEndCardUrl + collection_r8.mainCardApiId + "/image-cropped)"));
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngStyle", _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵpureFunction1"](1, _c0, "linear-gradient(to left, rgba(255,255,255,0) 20%,rgba(255,255,255,1)), url(" + ctx_r9.backEndCardUrl + collection_r8.mainCardId + "/image-cropped)"));
 } }
 function CollectionListComponent_div_12_span_6_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵelementStart"](0, "span");
@@ -4316,7 +4316,7 @@ function CollectionListComponent_div_12_Template(rf, ctx) { if (rf & 1) {
     const ctx_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵnextContext"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵstyleProp"]("background-color", collection_r8.color);
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", collection_r8 == null ? null : collection_r8.mainCardApiId);
+    _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵproperty"]("ngIf", collection_r8 == null ? null : collection_r8.mainCardId);
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](4);
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵtextInterpolate1"]("", collection_r8.name, " ");
     _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵadvance"](1);
@@ -4665,7 +4665,7 @@ function CollectionNewComponent_div_8_mat_expansion_panel_3_div_6_span_11_Templa
 } if (rf & 2) {
     const item_r12 = _angular_core__WEBPACK_IMPORTED_MODULE_17__["ɵɵnextContext"]().$implicit;
     _angular_core__WEBPACK_IMPORTED_MODULE_17__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_17__["ɵɵtextInterpolate1"](" (", item_r12.owner, " )");
+    _angular_core__WEBPACK_IMPORTED_MODULE_17__["ɵɵtextInterpolate1"](" (", item_r12.owner, ")");
 } }
 function CollectionNewComponent_div_8_mat_expansion_panel_3_div_6_mat_icon_13_Template(rf, ctx) { if (rf & 1) {
     const _r23 = _angular_core__WEBPACK_IMPORTED_MODULE_17__["ɵɵgetCurrentView"]();
@@ -5107,25 +5107,25 @@ class CollectionNewComponent {
           // collectionsItems.sort((a, b) => a.card.name.localeCompare(b.card.name) || a.card.type.localeCompare(b.card.type));
           collectionsItems.sort((a, b) => a.card.type.localeCompare(b.card.type) || a.card.name.localeCompare(b.card.name));
         });*/
-        this.cardColumn.populateCardValues(this.collection);
+        this.cardColumn?.populateCardValues(this.collection);
     }
     sortCollection(items) {
         // nb, lelve, atk, def , price
         switch (this.sort) {
             case _sort_dialog_card_sort__WEBPACK_IMPORTED_MODULE_3__.CardSort.alphabeticalAsc:
                 items.sort((a, b) => {
-                    const aName = a.language === 'en' ? (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(a.cardId).name : (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(a.cardId).nameFr;
-                    const bName = b.language === 'en' ? (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(b.cardId).name : (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(b.cardId).nameFr;
+                    const aName = a.language === 'en' ? (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(a.cardId).name : (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(a.cardId).nameFr ?? (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(a.cardId).name;
+                    const bName = b.language === 'en' ? (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(b.cardId).name : (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(b.cardId).nameFr ?? (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(a.cardId).name;
                     return (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(a.cardId).type.localeCompare((0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(b.cardId).type)
-                        || aName?.localeCompare(bName);
+                        || aName.localeCompare(bName);
                 });
                 break;
             case _sort_dialog_card_sort__WEBPACK_IMPORTED_MODULE_3__.CardSort.alphabeticalDesc:
                 items.sort((a, b) => {
-                    const aName = a.language === 'en' ? (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(a.cardId).name : (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(a.cardId).nameFr;
-                    const bName = b.language === 'en' ? (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(b.cardId).name : (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(b.cardId).nameFr;
+                    const aName = a.language === 'en' ? (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(a.cardId).name : (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(a.cardId).nameFr ?? (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(a.cardId).name;
+                    const bName = b.language === 'en' ? (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(b.cardId).name : (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(b.cardId).nameFr ?? (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(a.cardId).name;
                     return (0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(a.cardId).type.localeCompare((0,_global__WEBPACK_IMPORTED_MODULE_4__.getCard)(b.cardId).type)
-                        || bName?.localeCompare(aName);
+                        || bName.localeCompare(aName);
                 });
                 break;
             case _sort_dialog_card_sort__WEBPACK_IMPORTED_MODULE_3__.CardSort.nbOwnedAsc:
@@ -6474,7 +6474,7 @@ class DeckComponent {
         this.collection.totalItems = this.collection.items.map(value => value.quantity)
             .reduce((previousValue, currentValue) => previousValue + currentValue, 0);
         this.refreshCompetitiveCollectionView();
-        this.cardColumn.populateCardValues(this.collection);
+        this.cardColumn?.populateCardValues(this.collection);
     }
     refreshCompetitiveCollectionView() {
         this.mainDeckSpellsCompetitiveViewItems = [];
@@ -6543,18 +6543,18 @@ class DeckComponent {
         switch (this.sort) {
             case _sort_dialog_card_sort__WEBPACK_IMPORTED_MODULE_4__.CardSort.alphabeticalAsc:
                 items.sort((a, b) => {
-                    const aName = a.language === 'en' ? (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(a.cardId).name : (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(a.cardId).nameFr;
-                    const bName = b.language === 'en' ? (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(b.cardId).name : (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(b.cardId).nameFr;
+                    const aName = a.language === 'en' ? (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(a.cardId).name : (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(a.cardId).nameFr ?? (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(a.cardId).name;
+                    const bName = b.language === 'en' ? (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(b.cardId).name : (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(b.cardId).nameFr ?? (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(a.cardId).name;
                     return (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(a.cardId).type.localeCompare((0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(b.cardId).type)
-                        || aName?.localeCompare(bName);
+                        || aName.localeCompare(bName);
                 });
                 break;
             case _sort_dialog_card_sort__WEBPACK_IMPORTED_MODULE_4__.CardSort.alphabeticalDesc:
                 items.sort((a, b) => {
-                    const aName = a.language === 'en' ? (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(a.cardId).name : (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(a.cardId).nameFr;
-                    const bName = b.language === 'en' ? (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(b.cardId).name : (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(b.cardId).nameFr;
+                    const aName = a.language === 'en' ? (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(a.cardId).name : (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(a.cardId).nameFr ?? (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(a.cardId).name;
+                    const bName = b.language === 'en' ? (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(b.cardId).name : (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(b.cardId).nameFr ?? (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(a.cardId).name;
                     return (0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(a.cardId).type.localeCompare((0,_global__WEBPACK_IMPORTED_MODULE_5__.getCard)(b.cardId).type)
-                        || bName?.localeCompare(aName);
+                        || bName.localeCompare(aName);
                 });
                 break;
             case _sort_dialog_card_sort__WEBPACK_IMPORTED_MODULE_4__.CardSort.nbOwnedAsc:
@@ -7969,9 +7969,7 @@ class YugiohService {
         // .pipe(this.mergeMappArrayFindInCollection, this.mappp);
     }
     getCardsByIds(ids) {
-        const params = new _angular_common_http__WEBPACK_IMPORTED_MODULE_7__.HttpParams().set('ids', ids.join(','));
-        console.log('Getting cards by ids');
-        return this.http.get(_global__WEBPACK_IMPORTED_MODULE_2__.backendUrl + '/cards/by-ids', { params, headers: _global__WEBPACK_IMPORTED_MODULE_2__.httpOptions.headers });
+        return this.http.post(_global__WEBPACK_IMPORTED_MODULE_2__.backendUrl + '/cards/by-ids', ids, { headers: _global__WEBPACK_IMPORTED_MODULE_2__.httpOptions.headers });
     }
     getCardsBySet(set) {
         const params = new _angular_common_http__WEBPACK_IMPORTED_MODULE_7__.HttpParams().set('set', set);
